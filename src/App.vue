@@ -20,7 +20,10 @@
     <TodoModal v-show="modalVisible" v-on:close="modalVisible = false">
       <template v-slot:modal-text>{{ modalText }}</template>
     </TodoModal>
+
   </div>
+  <router-link to="/board">board</router-link>
+  <router-view />
 </template>
 
 <script>

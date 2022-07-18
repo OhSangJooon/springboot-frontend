@@ -13,6 +13,7 @@
       >{{ this.userName }}</span>
       .
     </p>
+    <p>게시판이동</p>
     <p class="title__task">
       <span class="title__task-top">오늘의 할 일은</span>
       <span class="title__task-count">
