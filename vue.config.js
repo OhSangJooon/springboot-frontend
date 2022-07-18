@@ -6,5 +6,19 @@ module.exports = {
   },
   indexPath: '../../templates/vue/index.html',
   publicPath: '/vue',
-  outputDir: path.resolve(__dirname, "../backend/blog/src/main/resources/static/vue")
+  outputDir: path.resolve(__dirname, "../backend/blog/src/main/resources/static/vue"),
+  css: {
+    sourceMap: true,
+    loaderOptions: {
+      scss: {
+        additionalData: `
+          @import "~@/assets/style/_mixins.scss";
+          @import "~@/assets/style/_variables.scss";
+          @import "~@/assets/style/_mediaQueries.scss";
+          @import "~@/assets/style/_svg.scss";
+          @import "~@/assets/style/_common.scss";
+        `
+      }
+    }
+  }
 }
